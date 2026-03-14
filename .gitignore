@@ -1,6 +1,13 @@
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .env
 venv/
-node_modules/
+.env.*
 .DS_Store
+*.log
+*.sqlite3
+*.db
+.vscode/
+.idea/

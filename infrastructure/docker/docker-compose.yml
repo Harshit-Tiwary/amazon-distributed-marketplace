@@ -1,0 +1,45 @@
+version: "3.9"
+
+services:
+
+  redis:
+    image: redis:7
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  product-service:
+    build:
+      context: ../../services/product-service
+    ports:
+      - "8001:8001"
+    depends_on:
+      - redis
+      - rabbitmq
+
+  order-service:
+    build:
+      context: ../../services/order-service
+    ports:
+      - "8002:8002"
+    depends_on:
+      - rabbitmq
+
+  payment-service:
+    build:
+      context: ../../services/payment-service
+    ports:
+      - "8003:8003"
+    depends_on:
+      - rabbitmq
+
+  api-gateway:
+    build:
+      context: ../../gateway/api-gateway
+    ports:
+      - "9000:9000"

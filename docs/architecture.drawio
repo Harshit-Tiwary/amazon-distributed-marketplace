@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.1">
+  <diagram name="Page-1" id="xpv_ZbB-i1Mb0Q3LAUdW">
+    <mxGraphModel dx="1489" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="370" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-6" edge="1" parent="1" source="Kw5t63TPITMRdIBeR0VV-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Kw5t63TPITMRdIBeR0VV-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Client&lt;div&gt;(Web / Mobile)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="240" x="320" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-9" edge="1" parent="1" source="Kw5t63TPITMRdIBeR0VV-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Kw5t63TPITMRdIBeR0VV-7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="API Gateway&lt;div&gt;(FastAPI / Nginx )&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="380" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-11" edge="1" parent="1" source="Kw5t63TPITMRdIBeR0VV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Kw5t63TPITMRdIBeR0VV-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-12" edge="1" parent="1" source="Kw5t63TPITMRdIBeR0VV-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Kw5t63TPITMRdIBeR0VV-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Microservice&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- Product Service&lt;/div&gt;&lt;div&gt;- Order Service&lt;/div&gt;&lt;div&gt;- Payment Service&lt;/div&gt;&lt;div&gt;- Inventory Service&lt;/div&gt;&lt;div&gt;Notification Service&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="320" x="280" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-14" edge="1" parent="1" source="Kw5t63TPITMRdIBeR0VV-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Kw5t63TPITMRdIBeR0VV-13" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-10" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="RabbitMQ&lt;div&gt;(Event Bus)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="90" x="400" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="Kw5t63TPITMRdIBeR0VV-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Redis&lt;div&gt;(Cache /&amp;nbsp; Rate Limit&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="360" y="880" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
