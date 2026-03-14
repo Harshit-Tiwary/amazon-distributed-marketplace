@@ -19,7 +19,7 @@ Redis is used for caching to reduce latency.
 # System Architecture
 
 ```
-![Architecture](docs/architecture.png)
+![Architecture](docs/architecture.drawio.png)
 ---
 
 # Tech Stack
